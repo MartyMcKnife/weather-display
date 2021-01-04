@@ -1,46 +1,61 @@
-const backgrounds : {[key: string]: string[]} = {
+const backgrounds: { [key: string]: string[] } = {
   thunderstorm: [
-    "/src/backgrounds/videos/thunderstorm.mp4",
-    "/src/backgrounds/audio/thunder.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754150/weather-app/video/thunderstorm_y8lvzy.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754760/weather-app/audio/thunder_wl6wwf.mp4",
   ],
   drizzle: [
-    "/src/backgrounds/videos/drizzle.mp4",
-    "/src/backgrounds/audio/drizzle.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754369/weather-app/video/drizzle_r5o5xr.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754763/weather-app/audio/drizzle_rgyq4q.mp4",
   ],
-  rain: ["/src/backgrounds/videos/rain.mp4", "/src/backgrounds/audio/rain.mp3"],
-  snow: ["/src/backgrounds/videos/snow.mp4", "/src/backgrounds/audio/snow.mp3"],
+  rain: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754305/weather-app/video/rain_haxdzs.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754765/weather-app/audio/rain_wwbmsx.mp4",
+  ],
+  snow: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754676/weather-app/video/snow_mfawrt.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754763/weather-app/audio/snow_ct83a2.mp4",
+  ],
   clear: [
-    "/src/backgrounds/videos/sunny.mp4",
-    "/src/backgrounds/audio/clear.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754193/weather-app/video/sunny_np4k2f.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754757/weather-app/audio/clear_dzehfh.webm",
   ],
   clouds: [
-    "/src/backgrounds/videos/cloudy.mp4",
-    "/src/backgrounds/audio/cloudy.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754081/weather-app/video/cloudy_zo9gqt.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754783/weather-app/audio/cloudy_fkjyij.mp4",
   ],
   mist: [
-    "/src/backgrounds/videos/mist.mp4",
-    "/src/backgrounds/audio/cloudy.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754349/weather-app/video/mist_kyrvht.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754783/weather-app/audio/cloudy_fkjyij.mp4",
   ],
   smoke: [
-    "/src/backgrounds/videos/smoke.mp4",
-    "/src/backgrounds/audio/fire.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754295/weather-app/video/smoke_ua21sg.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754758/weather-app/audio/fire_ivm1f4.webm",
   ],
   haze: [
-    "/src/backgrounds/videos/haze.mp4",
-    "/src/backgrounds/audio/cloudy.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754465/weather-app/video/haze_yemwjm.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754783/weather-app/audio/cloudy_fkjyij.mp4",
   ],
   dust: [
-    "/src/backgrounds/videos/dust.mp4",
-    "/src/backgrounds/audio/desert.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754060/weather-app/video/dust_qoyari.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754755/weather-app/audio/desert_qcuzjy.mp4",
   ],
   sand: [
-    "/src/backgrounds/videos/dust.mp4",
-    "/src/backgrounds/audio/desert.mp3",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754060/weather-app/video/dust_qoyari.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754755/weather-app/audio/desert_qcuzjy.mp4",
   ],
-  fog: ["/src/backgrounds/videos/fog.mp4", "/src/backgrounds/audio/cloudy.mp3"],
-  ash: ["/src/backgrounds/videos/ash.mp4"],
-  squall: ["/src/backgrounds/videos/wind.mp4"],
-  tornado: ["/src/backgrounds/videos/tornado.mp4"],
+  fog: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754495/weather-app/video/fog_gklwtj.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754783/weather-app/audio/cloudy_fkjyij.mp4",
+  ],
+  ash: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754416/weather-app/video/ash_b8nnge.mp4",
+  ],
+  squall: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754051/weather-app/video/wind_xzo77w.mp4",
+  ],
+  tornado: [
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609753874/weather-app/video/tornado_uzuzzz.mp4",
+  ],
 };
 
 export default backgrounds;
