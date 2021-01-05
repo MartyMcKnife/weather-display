@@ -4,8 +4,8 @@ import Weather from "./helper/openweatherparser";
 import WeatherContainer from "./components/WeatherContainer";
 import SearchBar from "./components/SearchBar";
 import useStickyState from "./helper/stickState";
-import ReactPlayer from "react-player"
-import backgrounds from "./backgrounds/backgroundsources"
+import ReactAudioPlayer from "react-audio-player";
+import backgrounds from "./backgrounds/backgroundsources";
 
 export default function App(): ReactElement {
   const [weather, setWeather] = useState({ loading: true } as Weather);
@@ -32,13 +32,27 @@ export default function App(): ReactElement {
   }, [city]);
   return (
     <div className="app">
-      <div className="info">
-        {!weather.loading && <WeatherContainer weather={weather} />}
-      </div>
+      {!weather.loading && (
+        <div className="media">
+          <video
+            src={backgrounds[weather.weather![0].main.toLowerCase()][0]}
+            loop
+            muted
+            autoPlay
+            className=" top-0 left-0 -z-10 fixed object-cover min-h-screen min-w-screen"
+          />
+          <ReactAudioPlayer
+            src={backgrounds[weather.weather![0].main.toLowerCase()][1]}
+            autoPlay
+          />
+        </div>
+      )}
       <div className="search">
         <SearchBar setCity={setCity} />
       </div>
-      {!weather.loading && <ReactPlayer url={backgrounds[weather.weather![0].main.toLowerCase()][0]} loop muted width="100%" height="100%"/>}
+      <div className="info">
+        {!weather.loading && <WeatherContainer weather={weather} />}
+      </div>
     </div>
   );
 }

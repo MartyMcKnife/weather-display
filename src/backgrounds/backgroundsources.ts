@@ -16,7 +16,7 @@ const backgrounds: { [key: string]: string[] } = {
     "https://res.cloudinary.com/dputo2kde/video/upload/v1609754763/weather-app/audio/snow_ct83a2.mp4",
   ],
   clear: [
-    "https://res.cloudinary.com/dputo2kde/video/upload/v1609754193/weather-app/video/sunny_np4k2f.mp4",
+    "https://res.cloudinary.com/dputo2kde/video/upload/v1609760414/weather-app/video/sunny_v2_lx0zio.mp4",
     "https://res.cloudinary.com/dputo2kde/video/upload/v1609754757/weather-app/audio/clear_dzehfh.webm",
   ],
   clouds: [
